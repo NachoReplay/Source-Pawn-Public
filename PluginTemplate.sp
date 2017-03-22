@@ -3,12 +3,9 @@
 // ====[ INCLUDES ]====================================================
 #include <sourcemod>
 #include <sdktools>
-#include <morecolors>
-#include <tf2_stocks>
-#include <timers>
 
 // ====[ DEBUG INFORMATION AND SWITCHES ]==============================
-#define DEBUG			1
+//#define DEBUG			1
 /*
 #if defined DEBUG then
 	PrintToServer("DEBUG: I'm debugging text printed to server console.");
@@ -20,7 +17,7 @@
 #define MAX_NAME		96
 #define MAX_BUFF_SM		128
 #define MAX_BUFF		512
-#define MESSAGE_BUFF	4096
+#define MESSAGE_BUFF		4096
 
 // ====[ CON_VARS ]====================================================
 //ConVar g_Cvar_bla;
