@@ -4,7 +4,7 @@
 #include <sourcemod>
 #include <sdktools>
 
-// ====[ DEBUG INFORMATION AND SWITCHES ]==============================
+// ====[ DEBUG INFORMATION AND SWITCH ]==============================
 //#define DEBUG			1
 /*
 #if defined DEBUG then
