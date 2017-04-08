@@ -24,7 +24,7 @@
 
 // ====[ VARIABLES ]===================================================
 // Handle, String, Float, Bool, NUM, TFCT
-//new blabla[MAXPLAYERS+1];
+//new g_iBlabla[MAXPLAYERS+1];
 
 
 public Plugin:myinfo =  {
