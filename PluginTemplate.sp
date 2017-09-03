@@ -8,12 +8,20 @@
 //#define DEBUG			1
 /*
 #if defined DEBUG then
-	PrintToServer("DEBUG: I'm debugging text printed to server console.");
+	PrintToServer("[%s-%s], I'm debugging text printed to server console.", g_sPluginName, g_sPluginVers);
 #endif
+
+====[ Team Information ]===================================================
+	This is the information regraded to this project.
+	
+	This is my template that I 
+
 */
 
 // ====[ CONSTANTS ]===================================================
+#define BIT_BUFF		16
 #define MAX_ID			32
+#define STOCK_BUFF		64
 #define MAX_NAME		96
 #define MAX_BUFF_SM		128
 #define QUERY_BUFF		256
@@ -27,6 +35,8 @@
 // Handle, String, Float, Bool, NUM, TFCT
 //new blabla[MAXPLAYERS+1];
 
+new String:g_sPluginVers[BIT_BUFF],				//String Var for storage of plugin vers.
+	String:g_sPluginName[MAX_ID];					//String Var for storage of plugin name.
 
 public Plugin:myinfo =  {
 	name = "[As] PROTECTED",
@@ -57,10 +67,11 @@ public Plugin:myinfo =  {
 //  _______________________________________________________________________________________________________________________________________________________________________________
 
 public OnPluginStart() {
-
+	GetPluginInfo(INVALID_HANDLE, PlInfo_Version, g_sPluginVers, sizeof(g_sPluginVers));
+	GetPluginInfo(INVALID_HANDLE, PlInfo_Name, g_sPluginName, sizeof(g_sPluginName));
 
 	#if defined DEBUG then
-		PrintToServer("OnPluginStart stuff was loaded");
+		PrintToServer("[%s-%s], OnPluginStart stuff was loaded.", g_sPluginName, g_sPluginVers);
 	#endif
 }
 
